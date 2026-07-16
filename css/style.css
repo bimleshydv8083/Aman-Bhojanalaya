@@ -3,13 +3,13 @@
 =========================== */
 
 :root {
-  --primary-color: #e67e22;
+  --primary-color: #f3bd80;
   --secondary-color: #d35400;
   --background-color: #fff8f0;
   --text-color: #2c3e50;
   --white: #ffffff;
 }
-
+S
 /* ===========================
    CSS Reset
 =========================== */
@@ -34,4 +34,32 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 18px 0;
+}
+
+.navbar-brand {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navbar-brand:hover {
+  color: var(--secondary-color);
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
 }
