@@ -1,0 +1,37 @@
+/* ===========================
+   Google Fonts
+=========================== */
+
+:root {
+  --primary-color: #e67e22;
+  --secondary-color: #d35400;
+  --background-color: #fff8f0;
+  --text-color: #2c3e50;
+  --white: #ffffff;
+}
+
+/* ===========================
+   CSS Reset
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
