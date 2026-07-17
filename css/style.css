@@ -3,27 +3,46 @@
 =========================== */
 
 :root {
-  --primary-color: #f3bd80;
+  /* Colors */
+
+  --primary-color: #e67e22;
   --secondary-color: #d35400;
+  --accent-color: #f4b400;
+
   --background-color: #fff8f0;
+
   --text-color: #2c3e50;
-  --white: #ffffff;
+
+  --white-color: #ffffff;
+
+  --black-color: #000000;
+
+  /* Fonts */
+
+  --heading-font: "Poppins", sans-serif;
+
+  --body-font: "Inter", sans-serif;
 }
-S
 /* ===========================
    CSS Reset
 =========================== */
 
 * {
   margin: 0;
+
   padding: 0;
+
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--body-font);
+
   background: var(--background-color);
+
   color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1,
@@ -32,8 +51,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--heading-font);
   font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ===========================
@@ -41,25 +65,72 @@ h6 {
 =========================== */
 
 .navbar {
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   padding: 18px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .navbar-brand {
-  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
   font-size: 1.8rem;
   font-weight: 700;
+  font-family: var(--heading-font);
+  transition: color 0.3s ease;
 }
 
 .navbar-brand:hover {
   color: var(--secondary-color);
 }
 
+.brand-icon {
+  font-size: 1.8rem;
+  margin-right: 6px;
+}
+
+.brand-text {
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
 .nav-link {
   color: var(--text-color);
   font-weight: 500;
+  transition: 0.3s ease;
 }
 
 .nav-link:hover {
   color: var(--secondary-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.btn-order {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-wrap: nowrap;
+}
+
+.btn-order:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
